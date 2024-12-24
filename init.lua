@@ -9,6 +9,9 @@ minetest.register_entity("v2_ai:dog", {
         textures = {"character.png"},
     },
 
+dofile(minetest.get_modpath("v2_ai").."/Cbkai.lua")
+
+    
     -- Entity state
     hp = 20,
     behaviors = {
