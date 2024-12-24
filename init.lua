@@ -118,14 +118,14 @@ end
 
 -- Spawning the AI in the world
 minetest.register_chatcommand("spawn_v2_ai", {
-    description = "Spawn a Dog AI",
+    description = "Spawn a v2 AI",
     func = function(name)
         local player = minetest.get_player_by_name(name)
         if player then
             local pos = player:get_pos()
             pos.y = pos.y + 1
             minetest.add_entity(pos, "v2_ai:dog")
-            return true, "Dog AI spawned!"
+            return true, "v2 AI spawned!"
         end
         return false, "Player not found!"
     end,
