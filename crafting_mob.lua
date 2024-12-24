@@ -103,7 +103,7 @@ minetest.register_chatcommand("spawn_crafting_ai", {
         if player then
             local pos = player:get_pos()
             pos.y = pos.y + 1
-            minetest.add_entity(pos, "mymod:crafting_ai_mob")
+            minetest.add_entity(pos, "v2_ai:crafting_ai_mob")
             return true, "Crafting AI mob spawned."
         end
         return false, "Failed to spawn the mob."
