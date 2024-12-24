@@ -1,4 +1,4 @@
--- Register a new entity: Dog AI
+-- Register a new entity: V2 AI
 minetest.register_entity("v2_ai:dog", {
     initial_properties = {
         physical = true,
